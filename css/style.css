@@ -1,0 +1,177 @@
+/* Reset de CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-image: url(../img/call-of-duty-mobile-4007.jpg);
+  background-size: cover; /* que la imagen ocupe todo el fondo del body */
+  background-position: top center; /* prioriza la parte de arriba */     
+  background-repeat: no-repeat; /* evita que se repita aunque es bastante grande y no lo hace */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  padding: 1rem 1rem;
+  flex-wrap: wrap;
+}
+
+.header__p {
+  text-decoration: none;
+  color: white;
+  display: flex;
+}
+.header__nav a {
+  font-size: 1.8rem;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 2rem;
+}
+
+.titulo_inicio {
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(199, 175, 0); /* color del relleno del texto */
+  text-shadow: black 1px 1px 2px, black 0 0 25px, black 0 0 5px; /* agrego sombra para legibilidad */
+  
+ 
+  
+  
+}
+
+.descripcion {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: rgb(199, 175, 0);
+  text-shadow: black 1px 1px 2px, black 0 0 25px, black 0 0 5px; /* agrego sombra para legibilidad */
+  
+}
+
+.productos-home {
+  width: 100%;
+  padding: 2rem;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.producto {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  max-width: 200px;
+  max-height: auto;
+  text-align: center;
+  color: orange;
+  border: 2px solid orange; /* borde para mayor contraste entre categorias */
+  box-shadow: 0 0 10px orange; /* sombra */
+}
+
+.producto__mitico {
+   color: red;
+  border: 2px solid red; /* borde para mayor contraste entre categorias */
+  box-shadow: 0 0 10px red; /* sombra */
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+
+/*----------------------------- CONTACTO ----------------------------*/
+
+.seccion-contacto {
+  width: 80%;
+
+  margin: 2rem auto;
+}
+
+.titulo-contacto {
+  font-size: 3rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: rgb(199, 175, 0);
+  text-shadow: black 1px 1px 2px, black 0 0 25px, black 0 0 5px;
+}
+
+.form {
+  background-color: black;
+  padding: 4rem;
+  border-radius: 1rem;
+  color: white;
+  width: 80; 
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.campo-form label {
+  font-size: 2rem;
+}
+.campo-form input,
+.campo-form textarea {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.form button {
+  background-color: rgb(199, 175, 0);
+  color: black;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
