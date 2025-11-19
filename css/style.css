@@ -13,12 +13,11 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background-image: url(../img/call-of-duty-mobile-4007.jpg);
   background-size: cover; /* que la imagen ocupe todo el fondo del body */
-  background-position: top center; /* prioriza la parte de arriba */     
+  background-position: top center; /* prioriza la parte de arriba */
   background-repeat: no-repeat; /* evita que se repita aunque es bastante grande y no lo hace */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
 
 header {
@@ -37,7 +36,8 @@ header {
   color: white;
   display: flex;
 }
-.header__nav a {
+.header__nav a,
+span {
   font-size: 1.8rem;
   list-style: none;
   text-decoration: none;
@@ -53,10 +53,6 @@ header {
   margin-bottom: 1rem;
   color: rgb(199, 175, 0); /* color del relleno del texto */
   text-shadow: black 1px 1px 2px, black 0 0 25px, black 0 0 5px; /* agrego sombra para legibilidad */
-  
- 
-  
-  
 }
 
 .descripcion {
@@ -65,7 +61,6 @@ header {
   margin-bottom: 3rem;
   color: rgb(199, 175, 0);
   text-shadow: black 1px 1px 2px, black 0 0 25px, black 0 0 5px; /* agrego sombra para legibilidad */
-  
 }
 
 .productos-home {
@@ -93,7 +88,7 @@ header {
 }
 
 .producto__mitico {
-   color: red;
+  color: red;
   border: 2px solid red; /* borde para mayor contraste entre categorias */
   box-shadow: 0 0 10px red; /* sombra */
 }
@@ -120,6 +115,16 @@ footer {
   margin-top: auto;
 }
 
+.bot {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background-color: rgb(199, 175, 0);
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
 
 /*----------------------------- CONTACTO ----------------------------*/
 
@@ -142,7 +147,7 @@ footer {
   padding: 4rem;
   border-radius: 1rem;
   color: white;
-  width: 80; 
+  width: 80;
   margin: auto;
   display: flex;
   flex-direction: column;
