@@ -9,8 +9,7 @@ export const agregarAlCarrito = (producto) => {
     const carrito = obtenerCarrito();
     carrito.push(producto)
     console.log(producto)
-    console.log(carrito)
-    
+   
     guardarCarrito(carrito)
     actualizarContador(carrito)
     mostrarMensaje("Agragado correctamemte")
@@ -20,6 +19,7 @@ export const agregarAlCarrito = (producto) => {
 export const eliminarProducto = (indice) => {
     const carrito = obtenerCarrito();
     carrito.splice(indice, 1)
+    
     guardarCarrito(carrito)
     actualizarContador(carrito)
     mostrarMensaje("Eliminado correctamente")

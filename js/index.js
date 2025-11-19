@@ -1,5 +1,3 @@
-
-import { productos } from "./productos.js"
 import { agregarAlCarrito } from "./funcionesCarrito.js";
 import { obtenerCarrito } from "./storage.js";
 import { actualizarContador } from "./ui.js";
@@ -10,8 +8,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const carrito = obtenerCarrito()
     actualizarContador(carrito)
 
-    console.log(productos);
-    //Empiezo a crear tarjetas para cada producto
+    fetch("./data/productos.json")
+
+    .then((response) => {  
+        if (!response.ok) 
+            throw new Error(`Error HTTP status: ${response.status}`);
+        return response.json()
+      })
+
+    .then((productos) => { 
+         //Empiezo a crear tarjetas para cada producto con los datos traidos del JSON
     productos.forEach(producto => {
 
 
@@ -50,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         boton.textContent = "Agregar al carrito"
 
         boton.addEventListener("click", () => {
-            agregarAlCarrito(producto)
+        agregarAlCarrito(producto)
 
 
         })
@@ -64,11 +70,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //Agrego la tarjeta al contenedor
         contenedortarjetas.appendChild(tarjeta)
+        });
+    })
+
+    .catch((error) => {  
+        console.log(error)
+        })
 
 
-
-
-    });
 
 })
 

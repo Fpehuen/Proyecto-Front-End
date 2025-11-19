@@ -19,8 +19,8 @@
 
     
 </head>
-<body>
-    <body class="body">
+
+<body class="body-carrito">
     <header>
   <p>
     <a href="../index.html">
@@ -36,9 +36,8 @@
   <nav class="header__nav">
     <ul>
       <li><a href="../index.html">Inicio</a></li>
-      <li><a href="./pages/contacto.html">Contacto</a></li>
-      <li><a href="./pages/carrito.html"> <img src="../img/carrito.png" alt="Carrito" height="25px">
-        <span id="Contador_carrito">0</span>
+      <li><a href="./contacto.html">Contacto</a></li>
+      <li><a href="./carrito.html"> <img src="../img/carrito.png" alt="Carrito" height="25px"><span id="contador-carrito">0</span>
           </a></li>
 
     </ul>
@@ -46,14 +45,14 @@
 </header>
 
 <main>
-    <h1 class="titulo_inicio">CODM STORE</h1>
-    <p class="descripcion">La tienda donde encontrás todas tus skins favoritas de COD Mobile.</p>    
+    <h1 class="titulo_inicio">Carrito de compra</h1>
+    <p class="descripcion">Tu lootbox te espera</p>    
     
     <section class="productos-home">
        
-        <div id="contenedor-tarjetas" class="contenedor-tarjetas">
-         
-        </div>
+        <div id="contenedor-carrito" class="contenedor-carrito"></div>
+        <div id="acciones-carrito"></div>
+        
 
       </section>
 
@@ -63,7 +62,7 @@
 <footer>
     <p class="footer">Facundo © 2025 Tienda COD Mobile</p>
       </footer> 
-<script type="module" src="../js/carrito.js"></script>     
+<script type="module" defer src="../js/carrito.js"></script>     
 </body>
 
 </html>
