@@ -10,9 +10,9 @@
 // }
 
 export const actualizarContador = (carrito) => {
-    const contador = document.getElementById("contador-carrito"); // coincide con tu HTML
+    const contador = document.getElementById("contador-carrito"); 
     
-    if (!contador) return; // por si acaso
+    if (!contador) return; 
 
     const items = carrito.length;
 
