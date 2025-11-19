@@ -84,11 +84,11 @@ span {
 }
 
 .descripcion , .mensaje-carrito-vacio {
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: 3rem;
   color: rgb(199, 175, 0);
-  text-shadow: black 1px 1px 2px, black 0 0 25px, black 0 0 5px; /* agrego sombra para legibilidad */
+  text-shadow: black 0px 0px 8px, black 0 0 5px, black 0 0 5px; /* agrego sombra para legibilidad */
 }
 
 .productos-home {
@@ -168,6 +168,14 @@ margin-top: 1rem;
   font-size: 1.6rem;
   cursor: pointer;
 }
+
+.bot:hover, .boton-vaciar:hover {
+  background-color: black; /* fondo negro al pasar el mouse */
+  color: rgb(199, 175, 0); /* texto amarillo */
+  box-shadow: 0 0 10px rgb(199, 175, 0), 0 0 20px rgb(199, 175, 0) inset; /* brillo neón */
+  transform: scale(1.1); /* pequeño zoom */
+}
+
 
 /*----------------------------- CONTACTO ----------------------------*/
 
